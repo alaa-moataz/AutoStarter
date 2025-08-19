@@ -10,10 +10,6 @@ task androidSourcesJar(type: Jar) {
     }
 }
 
-artifacts {
-    archives androidSourcesJar
-}
-
 group = PUBLISH_GROUP_ID
 version = PUBLISH_VERSION
 
@@ -34,7 +30,7 @@ afterEvaluate {
                     artifact("$buildDir/libs/${project.getName()}-${version}.jar")
                 }
 
-                artifact androidSourcesJar
+                artifact(androidSourcesJar)
 
                 // Mostly self-explanatory metadata
                 pom {
