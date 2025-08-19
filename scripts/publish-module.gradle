@@ -60,7 +60,12 @@ afterEvaluate {
             }
         }
     }
+
+    tasks.named("generateMetadataFileForReleasePublication") {
+        dependsOn(tasks.named("androidSourcesJar"))
+    }
 }
+
 
 ext["signing.key"] = rootProject.ext["signing.key"]
 ext["signing.keyId"] = rootProject.ext["signing.keyId"]
