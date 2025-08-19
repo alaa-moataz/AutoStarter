@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 
 ext {
 
-    PUBLISH_GROUP_ID = "com.github.alaa-moataz"
+    PUBLISH_GROUP_ID = "com.github.blink22"
     PUBLISH_VERSION = "2.1.0-fork1"
     PUBLISH_ARTIFACT_ID = "autostarter"
     PUBLISH_DESCRIPTION = 'A library to help add your app to android autostart'
