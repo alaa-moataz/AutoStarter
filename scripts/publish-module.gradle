@@ -13,7 +13,12 @@ afterEvaluate {
                 artifactId = PUBLISH_ARTIFACT_ID
                 version = PUBLISH_VERSION
 
-                // Mostly self-explanatory metadata
+                // Attach sources jar only if it exists (prevents duplicates)
+                def sourcesJarTask = tasks.findByName("sourcesJar")
+                if (sourcesJarTask != null) {
+                    artifact sourcesJarTask
+                }
+
                 pom {
                     name = PUBLISH_ARTIFACT_ID
                     description = PUBLISH_DESCRIPTION
