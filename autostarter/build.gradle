@@ -3,8 +3,8 @@ apply plugin: 'kotlin-android'
 
 ext {
 
-    PUBLISH_GROUP_ID = "com.github.judemanutd"
-    PUBLISH_VERSION = "1.1.0"
+    PUBLISH_GROUP_ID = "com.github.alaa-moataz"
+    PUBLISH_VERSION = "2.1.0-fork1"
     PUBLISH_ARTIFACT_ID = "autostarter"
     PUBLISH_DESCRIPTION = 'A library to help add your app to android autostart'
     PUBLISH_URL = 'https://github.com/judemanutd/AutoStarter'
